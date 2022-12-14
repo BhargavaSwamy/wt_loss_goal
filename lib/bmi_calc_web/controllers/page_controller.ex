@@ -2,7 +2,7 @@ defmodule BmiCalcWeb.PageController do
   use BmiCalcWeb, :controller
 
   def index(conn, _params) do
-    goal =  "To see your results, enter your height and weight"
+    goal =  "Enter height and weight to set your goal"
     render(conn, "index.html", goal: goal)
   end
 

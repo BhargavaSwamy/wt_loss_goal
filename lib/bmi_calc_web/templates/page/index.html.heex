@@ -1,5 +1,5 @@
 <div class="w-96 border-4 border-slate-300 bg-teal-700 p-4 text-center text-teal-100">
-  <p class="text-2xl font-bold">Set a realistic weight loss goal</p>
+  <p class="text-2xl font-bold">Set your weight loss goal</p>
   <p class="text-sm">For adults who might be overweight but are otherwise healthy (no other medical conditions)</p>
 </div>
 
@@ -15,17 +15,17 @@
   <p class="px-1 text-sm">inches </p>
 </div>
 
-<div class="flex w-96 border-4 border-slate-300 bg-teal-700 p-4 text-teal-100">
-  <p class="px-1 font-semibold">Weight :</p>
-  <p> <%= number_input f, :wt, step: "0.1", class: "align-text-top text-black border-4 rounded-full w-24" %> </p>
-  <p class="px-1 align-text-top text-sm">Kgs</p>
+<div class="flex align-items-baseline w-96 border-4 border-slate-300 bg-teal-700 p-4 text-teal-100">
+  <p class="px-1 font-semibold ">Weight :</p>
+  <p> <%= number_input f, :wt, step: "0.1", class: "text-black border-4 rounded-full w-24" %> </p>
+  <p class="px-1 text-sm">Kgs</p>
 </div>
 
 <div class="w-96 border-4 border-slate-300 bg-teal-700 p-4 text-center font-semibold text-teal-100">
   <p class="rounded-full border-2 border-yellow-100 bg-yellow-700 text-yellow-100 hover:font-bold"> <%= submit "Suggest a weight loss goal" %></p>
 </div>
 
- <div class="w-96 border-4 border-slate-300 bg-cyan-700 p-4 text-center text-teal-100">
+ <div class="w-96 border-4 border-slate-300 bg-teal-700 p-4 text-center text-teal-100">
       <p class="font-bold"> <%= @goal %></p>
 </div>
 
