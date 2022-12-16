@@ -5,7 +5,7 @@
 
 <%= form_for :bmi, "/" , fn f -> %>
 
-<div class="flex w-96 border-4 border-slate-300 bg-teal-700 p-4 text-teal-100">
+<div class="flex items-center w-96 border-4 border-slate-300 bg-teal-700 p-4 text-teal-100">
   <p class="px-1 font-semibold">Height :</p>
 
   <p> <%= number_input f, :feet, class: "px-1 text-black border-4 rounded-full w-24"  %></p>
@@ -15,7 +15,7 @@
   <p class="px-1 text-sm">inches </p>
 </div>
 
-<div class="flex align-items-baseline w-96 border-4 border-slate-300 bg-teal-700 p-4 text-teal-100">
+<div class="flex items-center w-96 border-4 border-slate-300 bg-teal-700 p-4 text-teal-100">
   <p class="px-1 font-semibold ">Weight :</p>
   <p> <%= number_input f, :wt, step: "0.1", class: "text-black border-4 rounded-full w-24" %> </p>
   <p class="px-1 text-sm">Kgs</p>
