@@ -5,28 +5,28 @@
 
 <%= form_for :bmi, "/" , fn f -> %>
 
-<div class="flex items-center w-96 border-4 border-slate-300 bg-teal-700 p-4 text-teal-100">
+<div class="flex w-96 items-center border-4 border-slate-300 bg-teal-700 p-4 text-teal-100">
   <p class="px-1 font-semibold">Height :</p>
 
-  <p> <%= number_input f, :feet, class: "px-1 text-black border-4 rounded-full w-24"  %></p>
+  <p><%= number_input f, :feet, class: "px-1 text-center text-black border-4 rounded-full w-24" %></p>
   <p class="px-1 text-sm">feet</p>
 
-  <p> <%= number_input f, :inches, class: "px-1 text-black border-4 rounded-full w-24"  %> </p>
-  <p class="px-1 text-sm">inches </p>
+  <p><%= number_input f, :inches, class: "px-1 text-center text-black border-4 rounded-full w-24" %></p>
+  <p class="px-1 text-sm">inches</p>
 </div>
 
-<div class="flex items-center w-96 border-4 border-slate-300 bg-teal-700 p-4 text-teal-100">
-  <p class="px-1 font-semibold ">Weight :</p>
-  <p> <%= number_input f, :wt, step: "0.1", class: "text-black border-4 rounded-full w-24" %> </p>
+<div class="flex w-96 items-center border-4 border-slate-300 bg-teal-700 p-4 text-teal-100">
+  <p class="px-1 font-semibold">Weight :</p>
+  <p><%= number_input f, :wt, step: "0.1", class: "text-center text-black border-4 rounded-full w-24" %></p>
   <p class="px-1 text-sm">Kgs</p>
 </div>
 
 <div class="w-96 border-4 border-slate-300 bg-teal-700 p-4 text-center font-semibold text-teal-100">
-  <p class="rounded-full border-2 border-yellow-100 bg-yellow-700 text-yellow-100 hover:font-bold"> <%= submit "Suggest a weight loss goal" %></p>
+  <p class="rounded-full border-2 border-yellow-100 bg-yellow-700 text-yellow-100 hover:font-bold"><%= submit "Suggest a weight loss goal" %></p>
 </div>
 
- <div class="w-96 border-4 border-slate-300 bg-teal-700 p-4 text-center text-teal-100">
-      <p class="font-bold"> <%= @goal %></p>
+<div class="w-96 border-4 border-slate-300 bg-teal-700 p-4 text-center text-teal-100">
+  <p class="font-bold"><%= @goal %></p>
 </div>
 
 <% end %>
