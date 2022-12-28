@@ -1,4 +1,4 @@
-# BmiCalc
+# wt_loss_goal
 
 To start your Phoenix server:
 
